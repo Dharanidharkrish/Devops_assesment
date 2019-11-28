@@ -129,7 +129,7 @@ span.psw {
 
 <h2>Modal Login Form</h2>
 <font color="red">${errorMessage}</font>
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button id="logbutton" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
 <div id="id01" class="modal">
   
@@ -141,12 +141,12 @@ span.psw {
 
     <div class="container">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="name" required>
+      <input type="text" id="namecheck" placeholder="Enter Username" name="name" required>
 
       <label for="psw"><b>Email</b></label>
-      <input type="text" placeholder="Enter Password" name="password" required>
+      <input id="pwdcheck" type="text" placeholder="Enter Password" name="password" required>
         
-      <button type="submit">Login</button>
+      <button type="submit" id="chklogin">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
