@@ -19,7 +19,7 @@ input[type=text], input[type=password] {
 button {
   background-color: #4CAF50;
   color: white;
-  margin: 8px 0;
+  padding: 12px 20px;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -145,7 +145,7 @@ span.psw {
       <label for="psw"><b>Email</b></label>
       <input id="pwdcheck" type="text" placeholder="Enter Password" name="password" required>
         
-      <button type="submit" id="chklogin">Login</button>
+      <button type="submit" id="chklogin" name="logi">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
